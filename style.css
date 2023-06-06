@@ -244,6 +244,7 @@ body {
     text-decoration: none;
     overflow: hidden;
     transition: .5s;
+    z-index: 1;
 }
 
 .home-sci a:hover {
