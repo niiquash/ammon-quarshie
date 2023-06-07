@@ -7,9 +7,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
 body {
-    background: #081b29;
-    color: #ededed;
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 .header {
@@ -27,7 +39,7 @@ body {
 
 .logo {
     font-size: 25px;
-    color: #ededed;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 600;
     position: relative;
@@ -40,14 +52,14 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background:#081b29;
+    background:var(--bg-color);
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
 }
 
 .navbar a {
     font-size: 18px;
-    color: #ededed;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -56,7 +68,7 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color: #00abf0;
+    color: var(--main-color);
 }
 
 .home {
@@ -64,7 +76,7 @@ body {
     /* background: url('assets/ammonGrey.JPG') no-repeat;
     background-size: cover;
     background-position: center; */
-    background: #081b29;
+    background: var(--bg-color);
     padding: 20px 20px;
     border-radius: 8px;
     display: flex;
@@ -90,7 +102,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background:#081b29;
+    background: var(--bg-color);
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
 }
@@ -99,7 +111,7 @@ body {
     position: relative;
     font-size: 30px;
     font-weight: 700;
-    color: #00abf0;
+    color: var(--main-color);
 }
 
 .home-content h3::before {
@@ -109,7 +121,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background:#081b29;
+    background:var(--bg-color);
     animation: showRight 1s ease forwards;
     animation-delay: 1.3s;
 }
@@ -127,7 +139,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background:#081b29;
+    background:var(--bg-color);
     animation: showRight 1s ease forwards;
     animation-delay: 1.6s;
 }
@@ -147,7 +159,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background:#081b29;
+    background:var(--bg-color);
     animation: showRight 1s ease forwards;
     animation-delay: 2.2s;
     z-index: 2;
@@ -160,11 +172,11 @@ body {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
     border-radius: 8px;
     font-size: 19px;
-    color: #081b29;
+    color: var(--bg-color);
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
@@ -174,20 +186,20 @@ body {
 }
 
 .btn-box a:hover {
-    color:#00abf0;
+    color:var(--main-color);
 }
 
 .btn-box a:nth-child(2) {
     background: transparent;
-    color:#00abf0;
+    color:var(--main-color);
 }
 
 .btn-box a:nth-child(2):hover {
-    color: #081b29;
+    color: var(--bg-color);
 }
 
 .btn-box a:nth-child(2)::before {
-    background: #00abf0;
+    background: var(--main-color);
 }
 
 .btn-box a::before {
@@ -197,14 +209,14 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background:#081b29;
+    background:var(--bg-color);
     z-index: -1;
     transition: .5s;
 }
 
 .btn-box a:hover::before {
     width: 100%;
-    color:#00abf0;
+    color:var(--main-color);
 }
 
 .home-sci {
@@ -222,7 +234,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background:#081b29;
+    background:var(--bg-color);
     animation: showRight 1s ease forwards;
     animation-delay: 2.5s;
     z-index: 2;
@@ -236,11 +248,11 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #00abf0;
+    border: 2px solid var(--main-color);
     border-radius: 50%;
     margin-right: 16px;
     font-size: 20px;
-    color:#00abf0;
+    color:var(--main-color);
     text-decoration: none;
     overflow: hidden;
     transition: .5s;
@@ -248,7 +260,7 @@ body {
 }
 
 .home-sci a:hover {
-    color:#081b29;
+    color:var(--bg-color);
 }
 
 .home-sci a::before {
@@ -258,7 +270,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #00abf0;
+    background: var(--main-color);
     z-index: -1;
     transition: .5s
 }
@@ -267,9 +279,80 @@ body {
     width: 100%;
 }
 
+.about {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+}
+
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+span {
+    color: var(--main-color)
+}
+
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color)
+}
+
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--second-bg-color);
+    border-bottom: .2rem solid var(--second-bg-color);
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    max-width: 1000px;
+    margin: 2rem 0 3rem;
+}
+
+.btn-box .btns {
+    display: inline-block;
+    width: 15rem;
+}
+
 /* KEYFRAMES ANIMATION */
 @keyframes showRight {
     100% {
         width: 0;
     }
 }
+
