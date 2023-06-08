@@ -11,18 +11,20 @@
 
   <body>
     <header class="header">
-      <a href="index.html" class="logo">AQ.</a>
+      <a href="#home" class="logo">AQ.</a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
 
       <nav class="navbar">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <!-- home section -->
-    <section class="home">
+    <section class="home" id="home">
         <!-- <div class="overlay"> -->
       <div class="home-content">
         <h1>Hi, I'm Ammon Quarshie</h1>
@@ -58,13 +60,15 @@
         </p>
 
         <div class="btn-box btns">
-            <a href="#" class="btn">See more</a>
+            <a href="https://linkedin.com/in/ammon-quarshie" class="btn">See more</a>
         </div>
         </div>
     </section>
 
+    <!-- Projects section -->
+
     <!-- contact section -->
-    <div class="contact" id="contact">
+    <section class="contact" id="contact">
         <h2 class="heading">Get in touch!</h2>
 
         <div class="contact-sci">
@@ -73,6 +77,18 @@
             <a href="https://www.facebook.com/ammon.quarshie.5/"><i class='bx bxl-facebook' ></i></a>
         </div>
 
-    </div>
-</div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Ammon Quarshie | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
 </html>
