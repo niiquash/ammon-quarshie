@@ -30,7 +30,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background:  transparent;
+    background:  var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,6 +71,7 @@ body {
     color: var(--main-color);
 }
 
+/**************** Home *****************/
 .home {
     height: 100vh;
     /* background: url('assets/ammonGrey.JPG') no-repeat;
@@ -300,6 +301,7 @@ span {
     color: var(--main-color)
 }
 
+/*************** About Me  *****************/
 .about-img {
     position: relative;
     width: 25rem;
@@ -332,6 +334,7 @@ span {
 
 .about-content {
     text-align: center;
+    width: 70vw;
 }
 
 .about-content h3 {
@@ -347,6 +350,78 @@ span {
 .btn-box .btns {
     display: inline-block;
     width: 15rem;
+}
+
+/************** Contact me  ******************/
+.contact {
+    position: relative;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--bg-color);
+    padding-bottom: 6rem;
+}
+.contact-sci {
+    position: absolute;
+    bottom:35%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:var(--bg-color);
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+.contact-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    margin-right: 16px;
+    font-size: 20px;
+    color:var(--main-color);
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+}
+
+.contact-sci a:hover {
+    color:var(--bg-color);
+}
+
+.contact-sci a::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s
+}
+
+.contact-sci a:hover::before {
+    width: 100%;
 }
 
 /* KEYFRAMES ANIMATION */
