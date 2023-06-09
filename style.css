@@ -354,13 +354,24 @@ span {
 
 .about-content p {
     font-size: 1.6rem;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 2rem 0 3rem;
 }
 
 .btn-box .btns {
     display: inline-block;
     width: 15rem;
+}
+
+/*************** Projects ***************/
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 6rem;
+    height: 100vh;
 }
 
 /************** Contact me  ******************/
@@ -372,7 +383,7 @@ span {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     padding-bottom: 6rem;
 }
 .contact-sci {
@@ -390,7 +401,7 @@ span {
     right: 0;
     width: 100%;
     height: 100%;
-    background:var(--bg-color);
+    background:var(--second-bg-color);
     animation: showRight 1s ease forwards;
     animation-delay: 2.5s;
     z-index: 2;
@@ -442,7 +453,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text p {
