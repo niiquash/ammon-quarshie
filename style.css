@@ -371,7 +371,7 @@ span {
     align-items: center;
     gap: 2rem;
     padding-bottom: 6rem;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 0 10%;
     margin-bottom: 6rem;
 }
@@ -636,5 +636,20 @@ span {
 
     .home-sci {
         width: 160
+    }
+
+    .about-img {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .about-img .circle-spin {
+        display: none;
+    }
+
+    .project-1 img {
+        width: 20rem;
+        border: 2px solid var(--main-color);
+        border-radius: 8px;
     }
 }
