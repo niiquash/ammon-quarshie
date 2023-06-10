@@ -371,7 +371,7 @@ span {
     align-items: center;
     gap: 2rem;
     padding-bottom: 6rem;
-    /* height: 100vh; */
+    height: 100vh;
     padding: 0 10%;
     margin-bottom: 6rem;
 }
@@ -645,6 +645,10 @@ span {
 
     .about-img .circle-spin {
         display: none;
+    }
+
+    .projects {
+        height:max-content
     }
 
     .project-1 img {
